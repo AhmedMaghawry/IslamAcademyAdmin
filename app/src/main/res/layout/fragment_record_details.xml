@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.RecordDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:src="@drawable/ic_rec"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/thumbnail"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:textColor="@color/mainDarker"
+                android:textSize="30sp"
+                tools:text="Dodo"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_margin="10dp"
+                android:textColor="@color/mainoffWhite"
+                android:textSize="20sp"
+                tools:text="Dodo"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:textColor="@color/mainWhite"
+            android:textSize="30sp"
+            android:text="The Record"
+            android:textStyle="bold"/>
+
+        <include
+            layout="@layout/player"/>
+    </LinearLayout>
+</ScrollView>

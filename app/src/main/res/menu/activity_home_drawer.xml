@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="الرئيسية" />
+        <item
+            android:id="@+id/nav_lec"
+            android:icon="@drawable/ic_vid"
+            android:title="محاضرات" />
+        <item
+            android:id="@+id/nav_art"
+            android:icon="@drawable/ic_art"
+            android:title="مقالات" />
+        <item
+            android:id="@+id/nav_rec"
+            android:icon="@drawable/ic_rec"
+            android:title="تسجيلات" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:title="Youtube"
+                android:icon="@drawable/ic_yt"
+                android:id="@+id/tube"/>
+            <item
+                android:title="SnapChat"
+                android:icon="@drawable/ic_sch"
+                android:id="@+id/snap"/>
+            <item
+                android:title="Telegram"
+                android:icon="@drawable/ic_te"
+                android:id="@+id/tele"/>
+            <item
+                android:title="Instagram"
+                android:icon="@drawable/ic_instagram"
+                android:id="@+id/insta"/>
+        </menu>
+    </item>
+
+</menu>
